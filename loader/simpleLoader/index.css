@@ -1,0 +1,83 @@
+/* .circle::before{
+    content:"";
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: aqua;
+    border-width: thick;
+    border-radius: 100%;
+} */
+.circle{
+    /* background-color: transparent;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: aqua;
+    border-width: thick;
+    border-radius: 100%; */
+    position: relative;
+  border: 1px solid black;
+  padding: 0;
+  margin: 1em auto;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+    /* border-bottom-style: dotted; */
+
+}
+/* .circle::before {
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 5px #cfd0d1;
+    border-bottom-color: #1c87c9;
+    border-radius: 50%;
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+  } */
+/* .circle::after {
+    content: " - Remember this";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+} */
+
+.circle div{
+    /* height: 10px;
+    width: 10px;
+    background-color: brown;
+    margin: 10px; */
+    overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;margin: 10px;
+    background-color: brown;
+    height: 50%;
+  transform-origin: 0% 100%;
+}
+
+.circle div:nth-child(1){
+    /* position: absolute; */
+    /* border-radius: 50%; */
+    /* top: -6px;
+    left: 49px; */
+    transform: rotate(0deg) skewY(-60deg);
+}
+.circle div:nth-child(2){
+    transform: rotate(60deg) skewY(-60deg);
+}
+.circle div:nth-child(3){
+    transform: rotate(120deg) skewY(-60deg);
+}
+.circle div:nth-child(4){
+    transform: rotate(180deg) skewY(-60deg);
+}
